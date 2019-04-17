@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 }
 
 body {
@@ -11,6 +12,122 @@ body {
 	line-height: 1.4;
 }
 
+form {
+	padding: 8px;
+	border-style: solid;
+	border-color: #dcdcdc;
+	border-width: 1px;
+	font-size: 13px;
+	color: #828282;
+}
+
+form > * {
+	margin: 8px;
+}
+
+a {
+	color: #0ea0d6;
+	font-style: italic;
+	text-decoration: none;
+}
+
+strong {
+	color: #f15e33;
+}
+
+input[type="button"] {
+	background-color: #fafafa;
+	border-style: solid;
+	border-radius: 3px;
+	border-color: #dcdcdc;
+	border-width: 1px 1px 2px 1px;
+	padding: 8px;
+	color: #828282;
+	font-weight: bold;
+	width: 40%;
+}
+
+.donation-module {
+	width: 303px;
+	height: 332px;
+	margin: auto;
+	padding: 23px;
+	position: relative;
+}
+
+.speech-bubble {
+	font-size: 14px;
+	font-weight: 100;
+	background-color: #424242;
+	border-radius: 3px;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 12px;
+	position: relative;
+}
+
+.speech-bubble::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  right: 30px;
+  width: 0;
+	height: 0;
+  border-width: 5px 5px 0;
+  border-style: solid;
+  border-color: #424242 transparent;
+}
+
+.progress-bar {
+	background: linear-gradient(90deg, #f15e33 76%, #fafafa 24%);
+	border-style: solid;
+	border-color: #dcdcdc;
+	border-width: 1px;
+	height: 12px;
+	width: 100%;
+	margin-bottom: -1px;
+}
+
+.donation-amount {
+	padding: 10px;
+	font-weight: bold;
+	font-size: 17px;
+	color: black;
+	border-style: solid;
+	border-color: #dcdcdc;
+	border-width: 1px;
+	border-radius: 3px;
+	width: 42%;
+	position: relative;
+}
+
+.submit-button {
+	color: white;
+	background-color: #00be1c;
+	border-style: solid;
+	border-color: #01b21a;
+	border-width: 1px;
+	border-radius: 3px;
+	width: 42%;
+	font-size: 17px;
+	padding: 10px;
+	position: relative;
+	right: 0;
+}
+
+.save-button {
+	position: absolute;
+	left: 0;
+	margin: 10px 23px;
+}
+
+.friends-button {
+	position: absolute;
+	right: 0;
+	margin: 10px 23px;
+}
 /* Fonts */
 h1 {
 	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
